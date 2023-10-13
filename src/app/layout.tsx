@@ -1,8 +1,11 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import { Catamaran } from 'next/font/google'
+const cataraman = Catamaran({
+  subsets: ['latin-ext'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+})
+ 
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${cataraman.className} text-[#434546]`}>{children}</body>
     </html>
   )
 }

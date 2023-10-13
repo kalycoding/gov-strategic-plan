@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -18,10 +20,72 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  font-family: 'Catamaran', sans-serif;
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.hero-tint::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 5.5rem);
+  background-color: rgba(0, 0, 0, 0.23);
+  z-index: 0;
+}
+
+.hero-tint {
+  height: calc(100vh - 5.40rem);
+  position: relative;
+  z-index: 1;
+}
+
+.hero-tint * {
+  position: relative;
+  z-index: 1;
+}
+
+.line-top::after {
+  content: "";
+  position: absolute;
+  /* top: 10px; */
+  margin-bottom: 10px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: red; 
+}
+
+.line-top {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.tint {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  z-index: 1;
+}
+
+.tint * {
+  position: relative;
+  z-index: 1;
+}
+
+.tint::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.36);
+  z-index: 0;
 }
