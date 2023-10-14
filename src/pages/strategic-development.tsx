@@ -106,7 +106,7 @@ export default function development() {
           <p className="text-center text-[#434546] pt-6">
             The strategic plan is framed around six (6) pillars: legislative and
             oversight functions, business process automation, excellence in
-            service delivery, public trust and enhanced stakeholders'
+            service delivery, public trust and enhanced stakeholders&apos;
             management, capacity strengthening, and promoting climate resilience
             commerce.
           </p>

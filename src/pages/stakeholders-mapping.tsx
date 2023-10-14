@@ -168,7 +168,7 @@ export default function development() {
         <p className="text-white font-[400] text-[18px] leading-[1.40] lg:w-[65%] pt-4 lg:pt-10">
           Stakeholder mapping is the process of identifying and categorizing key
           stakeholders involved in achieving the policy objectives and goals of
-          the House Committee on Commerce. It entails developing a stakeholder's
+          the House Committee on Commerce. It entails developing a stakeholder&apos;s
           map, build the list of relevant stakeholders from this map,
           determining the level of involvement of each stakeholder, their
           purpose, area of interest and goals and building an engagement plan

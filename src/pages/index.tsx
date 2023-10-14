@@ -95,7 +95,9 @@ export default function Index() {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-5">
           {CORE_VALUES.map((value, index) => (
-            <div className="border text-primary transition-all duration-300 hover:bg-primary hover:text-white px-6 py-8 w-full flex flex-col items-center justify-center">
+            <div 
+            key={"value-" + index}
+            className="border text-primary transition-all duration-300 hover:bg-primary hover:text-white px-6 py-8 w-full flex flex-col items-center justify-center">
               {value.icon && (
                 <Image src={value.icon} width={50} height={50} alt="" />
               )}
