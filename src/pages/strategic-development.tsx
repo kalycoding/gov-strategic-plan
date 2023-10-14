@@ -15,15 +15,15 @@ const DEVELOPMENT_PLANS = [
     image: "development-2.jpeg",
     title: "Business Process Automation",
     subtitle:
-      "Increase efficiency in Nigeria&apos;s commerce sector and enhance global participation",
+      "Increase efficiency in Nigeria's commerce sector and enhance global participation",
     description:
-      "This Strategic pillar focuses on transforming the Business process of the ministries and the Agencies under the committee&apos;s purview to become fully automated. It is a careful and systematic approach to enhance automation and digitalisation of the systems and processes fundamental to developing commerce, trade, and investment in Nigeria. This aligns with the global adjustment to e-trading, e-commerce, m-commerce, e-payment, and e-collection business approach.",
+      "This Strategic pillar focuses on transforming the Business process of the ministries and the Agencies under the committee's purview to become fully automated. It is a careful and systematic approach to enhance automation and digitalisation of the systems and processes fundamental to developing commerce, trade, and investment in Nigeria. This aligns with the global adjustment to e-trading, e-commerce, m-commerce, e-payment, and e-collection business approach.",
   },
   {
     image: "development-3.jpeg",
     title: "Excellence in Service Delivery",
     subtitle:
-      "“Institutionalization of Performance management system in the MDAs”",
+      "Institutionalization of Performance management system in the MDAs",
     description:
       "This pillar focuses on how the House Committee on Commerce can successfully work with the ministries and agencies under her jurisdiction to deliver their statutory responsibilities without compromise and ensure that Nigerians and trading partners within and outside the country always enjoy excellent service.",
   },
@@ -64,12 +64,12 @@ export default function development() {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "top center",
         }}
-        className="h-screen px-24 hero-tint bg-green-300 flex flex-col justify-center"
+        className="px-6 lg:px-24 w-full lg:h-[calc(100vh-5rem)] h-[calc(100vh-15rem)] tint flex flex-col justify-center"
       >
-        <h1 className="text-5xl text-white font-[700] leading-[1.40] uppercase w-[65%]">
+        <h1 className="text-4xl lg:text-5xl text-white font-[700] leading-[1.40] uppercase lg:w-[65%]">
           Strategic Development
         </h1>
-        <p className="text-white font-[400] text-[18px] leading-[1.40] w-[65%] pt-10">
+        <p className="text-white font-[400] text-[18px] leading-[1.40] lg:w-[65%] pt-4 lg:pt-10">
           The House Committee on Commerce 2023 - 2027 Strategic Plan was
           developed on the platform of setting up a team made up of the
           Consultants/Resource persons, Committee members, the Legislative
@@ -78,7 +78,7 @@ export default function development() {
           Munir, who facilitated the whole process.
         </p>
       </div>
-      <div className="px-24 py-24">
+      <div className="lg:px-24 px-6 py-24">
         <span className="absolute bg-secondary w-20 h-1"></span>
         <h1 className="text-2xl text-primary font-[700] leading-[1.40] uppercase pt-5">
           Strategic Plan
@@ -97,10 +97,10 @@ export default function development() {
           Components
         </div>
       </div>
-      <div className="py-24 px-24">
+      <div className="py-24 lg:px-24 px-6">
         <div className="flex flex-col relative justify-center items-center lg:w-7/12 mx-auto">
           <span className="bg-secondary w-20 h-0.5" />
-          <h1 className="text-2xl text-primary font-[700] leading-[1.40] uppercase pt-4">
+          <h1 className="text-2xl text-primary text-center font-[700] leading-[1.40] uppercase pt-4">
             Strategic Pillars, Objectives, And Outcomes
           </h1>
           <p className="text-center text-[#434546] pt-6">
@@ -115,7 +115,7 @@ export default function development() {
           {DEVELOPMENT_PLANS.map((plan, index) => (
             <div 
             key={"plan-" + index}
-            className="flex flex-col gap-4 border pb-4">
+            className="flex flex-col gap-4 border pb-6">
               <div
                 style={{
                   backgroundImage: `url('/images/${plan.image}')`,
@@ -123,7 +123,7 @@ export default function development() {
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "top center",
                 }}
-                className="flex tint items-center h-32 justify-center w-full px-4 py-10"
+                className="flex tint items-center h-32 justify-center w-full px-6 py-10"
               >
                 <p className="text-white">“{plan.subtitle}”</p>
               </div>
@@ -138,7 +138,7 @@ export default function development() {
           ))}
         </div>
       </div>
-      <EmailSubs /> 
+      <EmailSubs />
     </div>
   );
 }

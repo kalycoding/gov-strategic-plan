@@ -9,7 +9,7 @@ export default function EmailSubs() {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "top center",
       }}
-      className="flex flex-col justify-start py-32  px-24 ">
+      className="flex flex-col justify-start lg:py-32 py-16 lg:px-24 px-6">
             <span className="absolute bg-secondary w-20 h-1" />
             <h1 className="text-2xl text-white font-[700] leading-[1.40] uppercase pt-5">
               Recent News 

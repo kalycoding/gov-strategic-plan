@@ -35,15 +35,16 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100vh - 5.5rem);
+  height: calc(100vh - 5rem);
   background-color: rgba(0, 0, 0, 0.23);
   z-index: 0;
 }
 
 .hero-tint {
-  height: calc(100vh - 5.40rem);
+  height: calc(100vh - 5.5rem);
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 .hero-tint * {
