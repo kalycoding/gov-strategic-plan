@@ -105,7 +105,9 @@ export default function development() {
       <div className="grid grid-cols-3 gap-4 py-b px-24">
       {
           FACTORS.map((factor, index) => (
-            <div className="border border-[#F1EFEF]">
+            <div 
+            key={"factor-" + index}
+            className="border border-[#F1EFEF]">
           <div className="bg-[#12486B] px-5 py-6">
             <span className="absolute bg-secondary w-20 h-0.5"></span>
             <p className="text-[16px] first-letter:text-2xl pt-3 first-letter:text-secondary font-[700] text-white">
@@ -120,7 +122,7 @@ export default function development() {
             <ul className="text-[14px] pl-6 list-disc font-[400] text-[#434546] leading-[1.40]">
               {
                 factor.items.map((member, index) => (
-                  <li key={index} className="py-2">{member}</li>
+                  <li key={"factor-member-" + index} className="py-2">{member}</li>
                 ))
               }
             </ul>

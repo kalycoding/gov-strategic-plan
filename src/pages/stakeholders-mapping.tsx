@@ -179,7 +179,9 @@ export default function development() {
       <div className="grid lg:grid-cols-3 gap-4 py-16 lg:py-32 px-6 lg:px-24">
         {
           MAPPING_PLANS.map((plan, index) => (
-            <div className="border border-[#F1EFEF]">
+            <div 
+            key={"plan-" + index}
+            className="border border-[#F1EFEF]">
           <div className="bg-[#12486B] px-5 py-6">
             <span className="absolute bg-secondary w-20 h-0.5"></span>
             <p className="text-secondary font-[700] text-xs py-2 uppercase">
@@ -202,7 +204,7 @@ export default function development() {
             <ul className="text-[14px] pl-6 pt-4 list-disc font-[400] text-[#434546] leading-[1.40]">
               {
                 plan.members.map((member, index) => (
-                  <li key={index} className="py-2">{member}</li>
+                  <li key={"member-" + index} className="py-2">{member}</li>
                 ))
               }
             </ul>
