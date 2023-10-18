@@ -65,7 +65,7 @@ export default function Members() {
         </h1>
       </div>
       {members?.map(e =>
-        <div className="px-4 sm:px-8 md:px-12 lg:px-24 py-4 sm:py-6 flex flex-col gap-y-6 sm:gap-y-8 items-start">
+        <div key={e?.name} className="px-4 sm:px-8 md:px-12 lg:px-24 py-4 sm:py-6 flex flex-col gap-y-6 sm:gap-y-8 items-start">
         <div className="flex flex-col sm:flex-row justify-start gap-4 sm:gap-6">
           <div className="relative w-48 md:w-72 h-48 md:h-56 bg-gray-300 rounded">
             <Image
