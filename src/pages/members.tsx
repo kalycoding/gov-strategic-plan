@@ -21,7 +21,7 @@ export default function Members() {
             <div className="flex flex-col w-full gap-4">
               <div className="pt-4">
                 <p className="text-gray-800 text-sm w-6/12">
-                Abbas was born on 1 October 1963 in Kwarbai, Zaria, Kaduna State, Nigeria. He holds bachelor's degree in business administration and master's degree both from Ahmadu Bello University, Zaria.[1] He later obtained his doctorate degree in business administration from Usmanu Danfodiyo University, Sokoto.
+                Abbas was born on 1 October 1963 in Kwarbai, Zaria, Kaduna State, Nigeria. He holds bachelors degree in business administration and masters degree both from Ahmadu Bello University, Zaria.[1] He later obtained his doctorate degree in business administration from Usmanu Danfodiyo University, Sokoto.
                 </p>
               </div>
               <div className="flex justify-between w-8/12">
