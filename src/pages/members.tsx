@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import Image from "next/image";
 import React from "react";
+import { members } from "../data/members"
 
 export default function Members() {
   return (
@@ -38,7 +39,7 @@ export default function Members() {
                   Sokoto.
                 </p>
               </div>
-              <div className="flex flex-col sm:flex-row justify-between w-full sm:w-8/12">
+              {/* <div className="flex flex-col sm:flex-row justify-between w-full sm:w-8/12">
                 <div className="">
                   <h6 className="text-gray-400 font-semibold">Contact</h6>
                   <div className="flex flex-col gap-1 text-gray-800 text-sm">
@@ -53,16 +54,22 @@ export default function Members() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </div>
       <div className="px-4 sm:px-8 md:px-12 lg:px-24 py-4 sm:py-6 flex flex-col gap-y-6 sm:gap-y-8 items-start">
+        <h1 className="text-2xl text-gray-900 font-[700] leading-[1.40] uppercase pt-5">
+          Members House Committee on Commerce
+        </h1>
+      </div>
+      {members?.map(e =>
+        <div className="px-4 sm:px-8 md:px-12 lg:px-24 py-4 sm:py-6 flex flex-col gap-y-6 sm:gap-y-8 items-start">
         <div className="flex flex-col sm:flex-row justify-start gap-4 sm:gap-6">
           <div className="relative w-48 md:w-72 h-48 md:h-56 bg-gray-300 rounded">
             <Image
-              src="/images/ahmed-munir.png"
+              src={e?.imgUrl}
               layout="fill"
               className=""
               alt={""}
@@ -71,33 +78,30 @@ export default function Members() {
           <div className="w-full">
             <div className="flex flex-col gap-1">
               <h1 className="text-2xl sm:text-3xl font-bold text-gray-800">
-                Hon. Ahmed Munir
+                {e?.name}
               </h1>
               <p className="text-gray-500 capitalize">
-                Chairman, House Committee On Commerce
+                {e?.title}
               </p>
             </div>
             <div className="flex flex-col w-full gap-4">
               <div className="pt-2 sm:pt-4">
                 <p className="text-gray-800 text-sm sm:text-base w-full sm:w-6/12">
-                  Hon. Ahmed Munir was born on the 9th day of September, 1980,
-                  in Saminaka, Lere Federal Constituency, Kaduna State, Nigeria.
-                  He is married to Farida Munir, who is a civil servant and a
-                  proud father of twin boys; Mohammed and Kameel Munir.
+                  {e?.bio}
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row justify-between w-full sm:w-8/12">
                 <div className="">
                   <h6 className="text-gray-400 font-semibold">Contact</h6>
                   <div className="flex flex-col gap-1 text-gray-800 text-sm">
-                    <p className="">+234 706 5633 727</p>
+                    <p className="">{e?.phone ?? 'Not available'}</p>
                   </div>
                 </div>
                 <div className="">
                   <h6 className="text-gray-400 font-semibold">Address</h6>
                   <div className="flex flex-col gap-1 text-gray-800 text-sm">
                     <p className="capitalize">
-                      ahmadu bello way, kaduna-jos road, saminaka, kaduna
+                      {e?.address ?? 'Not available'}
                     </p>
                   </div>
                 </div>
@@ -106,6 +110,7 @@ export default function Members() {
           </div>
         </div>
       </div>
+      )}
       <Footer />
     </div>
   );
