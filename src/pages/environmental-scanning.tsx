@@ -67,7 +67,7 @@ export default function development() {
   return (
     <div className="bg-white min-h-screen">
       <NavBar />
-      <div
+      {/* <div
         style={{
           backgroundImage: `url('/images/hero-bg.png')`,
           backgroundSize: "fit",
@@ -78,8 +78,24 @@ export default function development() {
       >
         <h1 className="text-5xl text-white font-[700] leading-[1.40] uppercase w-[65%]">
           Environmental Scanning
+          </h1>
+          <p className="text-white font-[400] text-[18px] leading-[1.40] w-[65%] pt-10">
+          Environmental scanning is a process that systematically surveys and interprets relevant data to identify external opportunities and threats that could influence future decisions. PESTLE and SWOT Analysis are the two major techniques use in Environmental scanning process. In the process of developing this strategic plan for the House Committee on Commerce, PESTLE and SWOT analysis tools were applied.  
+          </p>
+        </div> */}
+      <div
+        style={{
+          backgroundImage: `url('/images/hero-bg.png')`,
+          backgroundSize: "fit",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "top center",
+        }}
+        className="px-6 lg:px-24 w-full lg:h-[calc(100vh-5rem)] h-[calc(100vh-15rem)] tint flex flex-col justify-center"
+      >
+        <h1 className="text-4xl lg:text-5xl text-white font-[700] leading-[1.40] uppercase lg:w-[65%]">
+        Environmental Scanning
         </h1>
-        <p className="text-white font-[400] text-[18px] leading-[1.40] w-[65%] pt-10">
+        <p className="text-white font-[400] text-[18px] leading-[1.40] lg:w-[65%] pt-4 lg:pt-10">
         Environmental scanning is a process that systematically surveys and interprets relevant data to identify external opportunities and threats that could influence future decisions. PESTLE and SWOT Analysis are the two major techniques use in Environmental scanning process. In the process of developing this strategic plan for the House Committee on Commerce, PESTLE and SWOT analysis tools were applied.  
         </p>
       </div>
@@ -91,7 +107,7 @@ export default function development() {
           SWOT
         </div>
       </div>
-      <div className="py-24 px-24">
+      <div className="py-24 px-6 md:px-24">
         <div className="flex flex-col relative justify-center items-center lg:w-7/12 mx-auto">
           <span className="bg-secondary w-20 h-0.5" />
           <h1 className="text-2xl text-primary font-[700] leading-[1.40] uppercase pt-4">
@@ -102,7 +118,7 @@ export default function development() {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-4 py-b px-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-b px-6 md:px-24">
       {
           FACTORS.map((factor, index) => (
             <div 
