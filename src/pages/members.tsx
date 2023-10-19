@@ -85,7 +85,7 @@ export default function Members() {
                 {e?.title}
               </p>
             </div>
-            <div className="flex flex-col w-full gap-4">
+            <div className="flex flex-col w-full gap-3">
               <div className="pt-2 sm:pt-4">
                 <p className="text-gray-800 text-sm sm:text-base w-full sm:w-6/12">
                   {e?.bio}
