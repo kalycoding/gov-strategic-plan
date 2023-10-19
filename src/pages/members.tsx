@@ -98,18 +98,25 @@ export default function Members() {
                     <p className="">{e?.phone ?? 'Not available'}</p>
                   </div>
                 </div>
-                {e?.fb && (
+                {(e?.fb || e?.twitter) && (
                   <div className="">
-                    <Link href={e?.fb}>
-                      <h6 className="text-gray-900 font-semibold">Facebook</h6>
-                    </Link>
-                  </div>
-                )}
-                {e?.twitter && (
-                  <div className="">
-                    <Link href={e?.twitter}>
-                      <h6 className="text-gray-900 font-semibold">X</h6>
-                    </Link>
+                    <h6 className="text-gray-400 font-semibold">Socials</h6>
+                    <div className="flex flex-col gap-1 text-gray-800 text-sm">
+                      {e?.fb && (
+                        <div className="">
+                          <Link href={e?.fb}>
+                            <h6 className="text-gray-900 font-semibold">Facebook</h6>
+                          </Link>
+                        </div>
+                      )}
+                      {e?.twitter && (
+                        <div className="">
+                          <Link href={e?.twitter}>
+                            <h6 className="text-gray-900 font-semibold">X</h6>
+                          </Link>
+                        </div>
+                      )}
+                    </div>
                   </div>
                 )}
                 {/* <div className="">
