@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="">
             <h5 className="text-sm text-secondary font-[700] uppercase">Socials</h5>
             <div className="flex flex-col text-[#434546] text-xs pt-3 gap-2">
-                <Link href={"https://twitter.com/commercecom_hor"}>Twitter</Link>
+                <Link href={"https://twitter.com/commercecom_hor"}>X</Link>
                 <Link href={"https://facebook.com/comercecomHOR"}>Facebook</Link>
                 {/* <Link href={"https://instagram.com/commercecom_hor"}>Instagram</Link> */}
             </div>

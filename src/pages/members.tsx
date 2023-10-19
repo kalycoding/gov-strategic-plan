@@ -3,6 +3,7 @@ import NavBar from "@/components/NavBar";
 import Image from "next/image";
 import React from "react";
 import { members } from "../data/members"
+import Link from "next/link";
 
 export default function Members() {
   return (
@@ -97,14 +98,28 @@ export default function Members() {
                     <p className="">{e?.phone ?? 'Not available'}</p>
                   </div>
                 </div>
-                <div className="">
+                {e?.fb && (
+                  <div className="">
+                    <Link href={e?.fb}>
+                      <h6 className="text-gray-900 font-semibold">Facebook</h6>
+                    </Link>
+                  </div>
+                )}
+                {e?.twitter && (
+                  <div className="">
+                    <Link href={e?.twitter}>
+                      <h6 className="text-gray-900 font-semibold">X</h6>
+                    </Link>
+                  </div>
+                )}
+                {/* <div className="">
                   <h6 className="text-gray-400 font-semibold">Address</h6>
                   <div className="flex flex-col gap-1 text-gray-800 text-sm">
                     <p className="capitalize">
                       {e?.address ?? 'Not available'}
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
