@@ -23,7 +23,7 @@ export default function Members() {
           <div className="w-full">
             <div className="flex flex-col gap-1">
               <h1 className="text-2xl sm:text-3xl font-bold text-gray-800">
-                Hon. Abbas Tajudeen
+                Rt. Hon. Abbas Tajudeen
               </h1>
               <p className="text-gray-500 capitalize">
                 Speaker of the House of Representatives

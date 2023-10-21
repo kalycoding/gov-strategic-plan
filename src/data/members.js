@@ -6,7 +6,7 @@ export const members = [
         phone: 'chairman@commercecom.ng',
         address: 'Ahmadu Bello Way, Kaduna-Jos Road, Saminaka, Kaduna',
         twitter: 'https://twitter.com/munirtech',
-        fb: 'https://fb.com/ahmed.munir.5817300',
+        fb: null,
         imgUrl: '/images/ahmed-munir.png'
     },
     {
