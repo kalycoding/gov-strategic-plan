@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+// import Startegy from "../../public/next.svg"
 
 export default function Footer() {
   return (
@@ -17,7 +18,7 @@ export default function Footer() {
                 <Link href={"/privacypolicy"}>Privacy Policy</Link>
             </div>
         </div>
-        <div className="">
+        <div className="mx-2">
             <h5 className="text-sm text-secondary font-[700] uppercase">Socials</h5>
             <div className="flex flex-col text-[#434546] font-semibold text-xs pt-3 gap-2">
                 <Link href={"https://twitter.com/commercecom_hor"}>X</Link>
@@ -31,6 +32,21 @@ export default function Footer() {
                 {/* <Link href={"tel:+2347065633727"}>Main: +234 706 5633 727</Link>
                 <Link href={"tel:+2347065633727"}>Press: +234 706 5633 727</Link> */}
                 <Link href={"mailto:contact@commercecom.ng"}>Email: contact@commercecom.ng</Link>
+            </div>
+        </div>
+        <div className="">
+            <h5 className="text-sm text-secondary font-[700] uppercase">Download</h5>
+            <div className="flex flex-col text-[#434546] text-xs pt-3 gap-2">
+                {/* <Link href={"tel:+2347065633727"}>Main: +234 706 5633 727</Link>
+                <Link href={"tel:+2347065633727"}>Press: +234 706 5633 727</Link> */}
+                <Link
+                  href="./strategy.pdf"
+                  download="STRATEGIC PLAN 2023 - 2027.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  >
+                    Strategic Plan 2023 - 2027
+                  </Link>
             </div>
         </div>
       </div>

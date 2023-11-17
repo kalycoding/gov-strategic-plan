@@ -28,7 +28,7 @@ const MAPPING_PLANS = [
   {
     title: "High Power and High Influence in the successful delivery of the mandate.",
     levelOfImportance: "High",
-    source: "Speaker of the House of Assembly",
+    source: "Speaker of the House of Representatives",
     internal: "Internal",
     members: [
       "Ensure timely communication with the Clerk and the staff on the activities",

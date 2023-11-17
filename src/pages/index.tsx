@@ -46,7 +46,7 @@ export default function Index() {
         </h1>
         <p className="text-white font-[400] text-[18px] leading-[1.40] lg:w-[65%] pt-4 lg:pt-10">
           The House Committee on Commerce is a Standing Committee created to
-          support the House of Assembly in fulfilling its mandate principally in
+          support the House of Representative in fulfilling its mandate principally in
           Commerce. The Committee engenders an ecosystem where ease of doing
           business is critical and simplifed, and foreign direct investment is
           encouraged.
