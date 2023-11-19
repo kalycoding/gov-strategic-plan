@@ -33,7 +33,7 @@ export default function Footer() {
                 <Link href={"mailto:contact@commercecom.ng"}>Email: contact@commercecom.ng</Link>
             </div>
         </div>
-        {/* <div className="">
+        {/* <div className=" ">
             <h5 className="text-sm text-secondary font-[700] uppercase">Download</h5>
             <div className="flex flex-col text-[#434546] text-xs pt-3 gap-2">
                
