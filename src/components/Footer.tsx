@@ -33,14 +33,13 @@ export default function Footer() {
                 <Link href={"mailto:contact@commercecom.ng"}>Email: contact@commercecom.ng</Link>
             </div>
         </div>
-        <div className="">
+        {/* <div className="">
             <h5 className="text-sm text-secondary font-[700] uppercase">Download</h5>
             <div className="flex flex-col text-[#434546] text-xs pt-3 gap-2">
-                {/* <Link href={"tel:+2347065633727"}>Main: +234 706 5633 727</Link>
-                <Link href={"tel:+2347065633727"}>Press: +234 706 5633 727</Link> */}
+               
                 <a href="file://./strategy.pdf" download>Strategic Plan 2023 - 2027</a>
             </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
